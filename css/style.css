@@ -13,6 +13,16 @@ body {
     color: green;
 }
 
-.one {
-    margin-bottom: 5px;
+.text {
+    background-color: blueviolet;
+}
+
+.text2 {
+    background-color: brown;
+    border-radius: 2px solid red;
+    
+}
+
+.bg-orange {
+    background-color: orange;
 }

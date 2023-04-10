@@ -85,11 +85,29 @@ console.log("Task-1");
 let btn2 = document.querySelector(".btn2");
 let out2 = document.querySelector(".out-2");
 
-let a2 = 222;
-
 function f2() {
+  let a2 = 222;
   return a2;
 }
-btn2.onclick = f2();
+
+function out() {
+  out2.innerHTML = f2();
+}
+btn2.onclick = out;
 
 console.log("Task-1");
+
+let btn31 = document.querySelector(".b-3-1");
+let btn32 = document.querySelector(".b-3-2");
+let out3 = document.querySelector(".out-3");
+
+function t3(a, b) {
+  return a * b;
+}
+btn31.onclick = function () {
+  out3.innerHTML = t3(2, 3);
+};
+
+btn32.onclick = function () {
+  out3.innerHTML = t3(5, 7);
+};
