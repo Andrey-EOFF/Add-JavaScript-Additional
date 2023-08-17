@@ -1,15 +1,15 @@
-// document.querySelector('button').onclick =  () => {
-//   console.log(document.querySelector('#one').value);
+document.querySelector("button").onclick = () => {
+  console.log(document.querySelector("#one").value);
 
-//   document.querySelector('button').style.backgroundColor = document.querySelector('#one').value;
+  document.querySelector("button").style.backgroundColor =
+    document.querySelector("#one").value;
+};
 
-// }
-
-// document.querySelector('#one').oninput = () => {
-
-//     console.log(document.querySelector('#one').value);
-//     document.querySelector('span').innerHTML = document.querySelector('#one').value;
-// }
+document.querySelector("#one").oninput = () => {
+  console.log(document.querySelector("#one").value);
+  document.querySelector("span").innerHTML =
+    document.querySelector("#one").value;
+};
 
 document.querySelector(".btn1").onclick = () => {
   console.log(document.querySelector("#i2").value);
@@ -49,3 +49,12 @@ function f2() {
 }
 
 input2.addEventListener("click", f2);
+
+const input3 = document.querySelector(".i-3");
+const output3 = document.querySelector(".out-33");
+
+input3.addEventListener("click", f3);
+
+function f3() {
+  output3.textContent = input3.value;
+}
