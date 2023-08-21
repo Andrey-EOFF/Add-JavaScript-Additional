@@ -7,6 +7,7 @@ let info = ["Andrey", "35", "Aquarius", "February"];
 
 // console.log(info);
 // console.log(info.length);
+// console.log(info[0]);
 
 // console.log(man);
 // console.log(man.length);
@@ -16,8 +17,8 @@ let info = ["Andrey", "35", "Aquarius", "February"];
 // man[0] = 'Serg';
 // console.log(man);
 
-let a = [1, 2, 3, 4, 5];
-console.log(a);
+// let a = [1, 2, 3, 4, 5, 6, 7];
+// console.log(a);
 
 // let t = a[0];
 // a[0] = a[a.length - 1];
@@ -25,7 +26,7 @@ console.log(a);
 // a[a.length - 1] = t;
 // console.log(a);
 
-// console.log(a[888]);
+// console.log(a[777]);
 
 // for (let i = 0; i < info.length; i++) {
 
@@ -41,7 +42,7 @@ console.log(a);
 // }
 // document.querySelector(".out-1").innerHTML = out;
 
-let b = [4, 15, 6, 25, 7, 2, 35, 5, 10];
+let b = [4, 15, 6, 25, 7, 73, 35, 5, 10];
 let max = b[0];
 for (let i = 0; i < b.length; i++) {
   if (b[i] > max) {
@@ -79,7 +80,7 @@ btn1.onclick = function () {
 console.log("Task-2");
 
 btn2.onclick = function () {
-  info1[0] = "Sergsdsdsd";
+  info1[0] = "Ostap";
   out2.innerHTML = `<p>Name - ${info1[0]}</p><p>Years - ${info1[1]}</p><p>Zodiak - ${info1[2]}</p><p>Month - ${info1[3]}</p><p>Bule - ${info1[4]}</p><div>Length - ${info1.length}</div>`;
 };
 

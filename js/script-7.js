@@ -1,22 +1,15 @@
-// let func1 = document.querySelector(".func1");
-// function one() {
-//   console.log("Work");
+// 2
+
+// func1.onclick = function () {
+//     console.log('hello')
 // }
-
-// one();
-
-// // func1.onclick = one;
-
-// // func1.onclick = function () {
-// //     console.log('hello')
-// // }
 
 // func1.onclick = () => {
 //   console.log("hello");
 // };
 
-// console.log(1 + one());
 // console.log(one());
+
 
 // function two() {
 //   console.log("Work f2");

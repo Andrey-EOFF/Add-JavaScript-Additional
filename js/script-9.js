@@ -3,7 +3,7 @@
 const one = document.querySelector('.text');
 
 one.style.width = '150px';
-one.style.paddingBottom = '50px';
+one.style.padding = '50px';
 
 console.log(one.style);
 one.classList.add('text2');
@@ -37,6 +37,7 @@ a.onclick = function () {
     alert('Hello');
 }
 document.querySelector('.test3').appendChild(a);
+
 console.log(a)
 
 console.log('Task-1');
