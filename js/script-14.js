@@ -11,6 +11,7 @@ const updateWeatherInfo = (cityName) => {
       console.log(data);
 
       document.querySelector(".mb-0").textContent = data.name;
+      document.querySelector(".icon").innerHTML = `<img>${data.weather[0]['icon']}</img>`;
       document.querySelector(".display-2").innerHTML =
         Math.round(data.main.temp - 273) + "&deg;";
       document.querySelector(".show").textContent =
