@@ -1,12 +1,54 @@
 body {
     background-color: rgb(148, 206, 237);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+  
+}
+.header {
+  height: 100px;
+  background-color: rgb(130, 101, 244);
+}
+
+.main{
+
+  padding: 20px;
+  min-height: 100%;
+}
+
+.list{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+li {
+  max-width: 250px;
+  margin-right: 10px;
+  list-style: none;
+}
+
+.form-product{
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content:space-between ;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  max-width: 300px;
+}
+
+.footer{
+  height: 150px;
+  background-color: rgb(130, 101, 244);
 }
 
 .text-content {
 
     display: flex;
     justify-content: center;
-
+    
 }
 
 .text-content-home {
@@ -146,3 +188,5 @@ header {
     fill: blue;
   }
 }
+
+

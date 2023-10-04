@@ -1,63 +1,79 @@
-let a = new Set();
-a.add(1);
-a.add(2);
-a.add("Hello");
-a.add(1);
-a.add("1");
-// a.clear();
-// a.delete('Hello')
+const list = document.querySelector(".list");
+const form = document.querySelector(".form-product");
+const frTitle = document.querySelector(".form-title");
+const frDescription = document.querySelector(".form-description");
+const frPrice = document.querySelector(".form-price");
 
-// console.log(a);
-// console.log(a.size);
-// console.log(a.has('Hello'));
+async function fetchData() {
+  try {
+    const response = await fetch("https://fakestoreapi.com/products");
+    const data = await response.json();
 
-for (let i of a) {
-  console.log(i);
+    // console.log(data);
+
+    getDataProducts(data);
+  } catch (error) {
+    console.error("Виникла помилка:", error);
+  }
 }
 
-let arr = [1, 1, 5, 3, 6, 7, 3, 4, 6, "Hi", "Hello", 5, 5, "Hi"];
+function getDataProducts(data) {
+  if (data) {
+    data.forEach((item) => {
+      const el = document.createElement("li");
+      const title = document.createElement("h1");
+      title.textContent = item.title;
 
-let b = new Set(arr);
-console.log(b);
-console.log(b.size);
+      const description = document.createElement("p");
+      description.textContent = item.description;
 
-let bArr = Array.from(b);
-console.log(bArr);
+      const price = document.createElement("span");
+      price.textContent = item.price;
 
-console.log("Lesson-1");
+      el.appendChild(title);
+      el.appendChild(description);
+      el.appendChild(price);
+      list.appendChild(el);
+    });
+    return;
+  }
+}
 
-let s1 = new Set();
-s1.add("h");
-s1.add("b");
-s1.add("o");
-s1.add("h");
+fetchData();
 
-console.log(s1);
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-console.log("Lesson-2");
+  const productData = {
+    title: frTitle.value,
+    description: frDescription.value,
+    price: frPrice.value,
+  };
 
-const s2 = new Set();
-const i2 = document.getElementById("i-2");
-const b2 = document.getElementById("b-2");
+  try {
+    const response = await fetch("https://fakestoreapi.com/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(productData),
+    });
 
-b2.addEventListener("click", () => {
-  const newItem = i2.value.trim();
-  if (newItem) {
-    s2.add(newItem);
-    console.log(s2);
+    if (response.ok) {
+      console.log("Продукт успішно доданий!");
+    } else {
+      console.error("Помилка при додаванні продукта:", response.status);
+    }
+  } catch (error) {
+    console.error("Виникла помилка:", error);
   }
 });
 
-console.log("Lesson-3");
+const a = [{ d: 1 }, 2, 3];
+const b = [...a];
 
-const s3 = new Set(["foo", "bar", "baz", "gol", "gap", "2", "4", "6"]);
-const i3 = document.getElementById("i-3");
-const b3 = document.getElementById("b-3");
+b[0].d = 4;
 
-b3.addEventListener("click", () => {
-  const itemToRemove = i3.value.trim();
-  if (s3.has(itemToRemove)) {
-    s3.delete(itemToRemove);
-    console.log(s3);
-  }
-});
+console.log(a[0].d);
+
+
