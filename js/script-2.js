@@ -1,22 +1,34 @@
-console.log('Start');
+// const clients = ["Mango", "Ajax", "Poly"];
 
-let a = 6;
-let b = 'Hello';
-// console.log(a);
+// for (const client of clients) {
+//   console.log(client);
+// }
 
+// const g = "javascript";
 
-let inputIn = document.querySelector('.input-in');
-let buttonGo = document.querySelector('.btn-go');
-let inputInfo = document.querySelector('.out');
+// for (const h of g) {
+//   console.log(h);
+// }
 
+// const clients = ["Mango", "Poly", "Ajax"];
+// const clientNameToFind = "Poly";
+// let message;
 
-buttonGo.onclick = function () {
-    // console.log('button work');
-    // console.log(inputIn.value);
-    let valueInput = inputIn.value; //let valueInput = +inputIn.value; (+ переводит в числа)
-    console.log(valueInput);
-    inputInfo.innerHTML = valueInput;
-    inputIn.value = ' ';
-}
+// for (const client of clients) {
+//   if (client === clientNameToFind) {
+//     message = `We are find him - it is ${clientNameToFind} `;
+//     break;
+//   }
+//   message = "Клієнт з таким ім'ям відсутній в базі даних!";
+// }
+// console.log(message);
 
+// const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+// const threshold = 15;
 
+// for (let i = 0; i < numbers.length; i += 1) {
+//   if (numbers[i] < threshold) {
+//     continue;
+//   }
+//   console.log(`Число більше за ${threshold}: ${numbers[i]}`);
+// }
