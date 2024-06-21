@@ -142,8 +142,88 @@
 // colors.splice(2, 0, "purple", "apple", "ddddd");
 // console.log(colors);
 
-const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
-const newClients = ["Monkong", "Singu"];
+// const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+// const newClients = ["Monkong", "Singu"];
 
-const allClientsWithOldFirst = oldClients.concat(newClients);
-console.log(allClientsWithOldFirst);
+// const allClientsWithOldFirst = oldClients.concat(newClients);
+// console.log(allClientsWithOldFirst);
+
+// function test() {
+//   console.log("ho");
+// }
+
+// test();
+
+// function multiply(x, y, z) {
+//    return x * y * z;
+// }
+
+// multiply(4, 2, 2, 4, 7);
+// console.log(multiply(2, 4, 7))
+
+// function multiply() {
+//     let total = 1;
+
+//     for (const argument of arguments) {
+//       total *= argument;
+//     }
+
+//     return total;
+//   }
+
+//   console.log(multiply(1, 2, 3)); //  6
+//   console.log(multiply(1, 2, 3, 4)); //  24
+//   console.log(multiply(1, 2, 3, 4, 5)); //  120
+
+//   function fn() {
+
+//     const args = Array.from(arguments);
+// }
+
+// function withdraw(amount, balance) {
+//     if (amount === 0) {
+//       console.log("Для проведення операції введіть суму більшу за нуль");
+//     } else if (amount > balance) {
+//       console.log("Недостатньо коштів на рахунку");
+//     } else {
+//       console.log("Операція зняття коштів проведена успішно");
+//     }
+//   }
+
+//   withdraw(0, 300); // "Для проведення операції введіть суму більшу за нуль"
+//   withdraw(500, 300); // "Недостатньо коштів на рахунку"
+// withdraw(100, 300); // "Операція зняття коштів проведена успішно"
+
+// const multiply = function (x, y, z) {
+//   console.log(`Результат множення дорівнює ${x * y * z}`);
+//   return x * y * z;
+// };
+
+// multiply(2, 2, 2);
+
+// console.log(multiply(3, 3, 3));
+
+
+
+// multiply(1, 2, 3);
+
+// const multiply = function (x, y, z) {
+//   console.log(`Результат множення дорівнює ${x * y * z}`);
+// };
+
+// multiply(4, 5, 6);
+// const globalValue = 10;
+
+// console.log(globalValue); // 10
+
+// function foo() {
+//   console.log(globalValue); // 10
+// }
+
+// for (let i = 0; i < 5; i++) {
+//   console.log(globalValue); // 10
+
+//   if (i === 2) {
+//     console.log(globalValue); // 10
+//   }
+// }
