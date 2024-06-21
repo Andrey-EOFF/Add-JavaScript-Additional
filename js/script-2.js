@@ -227,3 +227,18 @@
 //     console.log(globalValue); // 10
 //   }
 // }
+
+
+function fnA() {
+    console.log("Лог всередині функції fnA до виклику fnB");
+    fnB();
+    console.log("Лог всередині функції fnA після виклику fnB");
+  }
+  
+  function fnB() {
+    console.log("Лог всередині функції fnB");
+  }
+  
+  console.log("Лог до виклику fnA");
+  fnA();
+  console.log("Лог після виклику fnA");
