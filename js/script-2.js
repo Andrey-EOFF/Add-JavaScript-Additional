@@ -32,3 +32,50 @@
 //   }
 //   console.log(`Число більше за ${threshold}: ${numbers[i]}`);
 // }
+// let a = 5;
+
+// let b = a;
+// let c = a + b;
+// let g = c;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(g);
+// console.log("================================================")
+// a = 17;
+// b = a;
+// console.log(a);
+// console.log(b);
+
+// const a = ["Mango"];
+
+// const b = a;
+
+// console.log(a);
+// console.log(b);
+
+// a.push("Andr");
+
+// console.log(a);
+// console.log(b);
+
+// b.push("HHHH");
+
+// console.log(a);
+// console.log(b);
+
+// const namge = "Mango";
+// console.log(namge.split(""));
+// const message = "JavaScript - це цікаво";
+// console.log(message.split(" "));
+
+// const words = ["JavaScript", "це", "цікаво"];
+// const wordsCopy = words.join("=");
+
+// console.log(wordsCopy);
+// console.log(words);
+
+const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+console.log(clients.indexOf("Poly")); // 2
+console.log(clients.indexOf("Monkong")); // -1
