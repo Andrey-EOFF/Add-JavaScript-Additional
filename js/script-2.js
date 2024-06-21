@@ -76,6 +76,74 @@
 // console.log(wordsCopy);
 // console.log(words);
 
-const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
-console.log(clients.indexOf("Poly")); // 2
-console.log(clients.indexOf("Monkong")); // -1
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+
+// // console.log(clients.length - 1);
+// // console.log(clients[3]);
+// // console.log(clients.indexOf("Poly")); // 2
+// // console.log(clients.indexOf("Monkong")); // -1
+
+// console.log(clients.includes("Poly")); // true
+// console.log(clients.includes("Monkong")); // false
+
+// const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
+// const fruit = "cherry";
+// // Перевіряємо присутність елемента
+// const hasFruit = redFruits.includes(fruit);
+
+// if (hasFruit) {
+//   console.log(`${fruit} is a red fruit!`);
+// } else {
+//   console.log("dsdssdsd");
+// }
+
+// const numbers = [];
+
+// numbers.push(1);
+// console.log(numbers);
+// numbers.push(2);
+// console.log(numbers);
+// numbers.push(3);
+// console.log(numbers);
+// numbers.push(4);
+// console.log(numbers);
+// numbers.push(5);
+// console.log(numbers);
+
+// const numbers = [1, 2, 3, 4, 5];
+// const popit = numbers.pop();
+// console.log(popit);
+
+// console.log(numbers.pop()); //  4
+// console.log(numbers); // [1, 2, 3]
+
+// console.log(numbers.pop()); //  3
+// console.log(numbers); // [1, 2]
+
+// console.log(numbers.pop()); //  2
+// console.log(numbers); // [1]
+
+// console.log(numbers.pop()); //  1
+// console.log(numbers); // []
+
+// const clients = ["Mango", "Ajax", "Poly", "Kiwi", "Andri", "June"];
+// console.log(clients.slice(1, 3));
+// console.log(clients.slice(1));
+// console.log(clients.slice());
+// console.log(clients.slice(-3));
+
+// const scores = [1, 2, 3, 4, 5];
+// console.log(scores);
+// const deletedScores = scores.splice(0, 3);
+// console.log(scores);
+// console.log(deletedScores);
+// const colors = ["red", "green", "blue"];
+
+// colors.splice(2, 0, "purple", "apple", "ddddd");
+// console.log(colors);
+
+const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+const newClients = ["Monkong", "Singu"];
+
+const allClientsWithOldFirst = oldClients.concat(newClients);
+console.log(allClientsWithOldFirst);
