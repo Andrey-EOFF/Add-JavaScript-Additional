@@ -203,8 +203,6 @@
 
 // console.log(multiply(3, 3, 3));
 
-
-
 // multiply(1, 2, 3);
 
 // const multiply = function (x, y, z) {
@@ -228,17 +226,134 @@
 //   }
 // }
 
+// function fnA() {
+//     console.log("Лог всередині функції fnA до виклику fnB");
+//     fnB();
+//     console.log("Лог всередині функції fnA після виклику fnB");
+//   }
 
-function fnA() {
-    console.log("Лог всередині функції fnA до виклику fnB");
-    fnB();
-    console.log("Лог всередині функції fnA після виклику fnB");
-  }
-  
-  function fnB() {
-    console.log("Лог всередині функції fnB");
-  }
-  
-  console.log("Лог до виклику fnA");
-  fnA();
-  console.log("Лог після виклику fnA");
+//   function fnB() {
+//     console.log("Лог всередині функції fnB");
+//   }
+
+//   console.log("Лог до виклику fnA");
+//   fnA();
+//   console.log("Лог після виклику fnA");
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+// console.log(book);
+// console.log(book.genres);
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   stats: {
+//     followers: 5603,
+//     views: 4827,
+//     likes: 1308,
+//   },
+// };
+
+// console.log(user);
+
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// const bookTitle = book.title;
+// console.log(bookTitle); // 'The Last Kingdom'
+
+// const bookGenres = book.genres;
+// console.log(bookGenres); // ['historical prose', 'adventurs']
+
+// const bookPrice = book.price;
+// console.log(bookPrice); // undefined
+
+// const user = {
+//   name: "Jacques Gluke",
+//   tag: "jgluke",
+//   location: {
+//     country: "Jamaica",
+//     city: "Ocho Rios",
+//   },
+//   hobbies: ["swiming", "music", "sci-fi"],
+// };
+
+// const location = user.location;
+// console.log(location); // Об'єкт location
+
+// const country = user.location.country;
+// console.log(country); // 'Jamaica
+
+// const hobbies = user.hobbies;
+// console.log(hobbies); // ['swiming', 'music', 'sci-fi']
+
+// const firstHobby = user.hobbies[0];
+// console.log(firstHobby); // 'swiming'
+
+// const numberOfHobbies = user.hobbies.length;
+// console.log(numberOfHobbies); // 3
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// const bookTitle = book["title"];
+// console.log(bookTitle); // 'The Last Kingdom'
+
+// const bookGenres = book["genres"];
+// console.log(bookGenres); // ['historical prose', 'adventurs']
+
+// const propKey = "author";
+// const bookAuthor = book[propKey];
+// console.log(bookAuthor); // 'Bernard Cornwell'
+
+// book.rating = 9;
+// book.isPublic = false;
+// book.genres.push("драма");
+
+// console.log(book.rating); // 9
+// console.log(book.isPublic); // false
+// console.log(book.genres); // ['historical prose', 'adventures', 'драма']
+
+
+// book.pageCount = 836;
+// book.originalLanguage = "en";
+// book.translations = ["ua", "ru"];
+
+// console.log(book.pageCount); // 836
+// console.log(book.originalLanguage); // 'en'
+// console.log(book.translations); // ['ua', 'ru']
+
+// const name = "Генрі Сибола";
+// const age = 25;
+// const fr = [1, 3, 4, 5, 6];
+
+// const user = {
+//   name,
+//   age,
+//   fr,
+// };
+
+// console.log(user.name); // "Генрі Сибола"
+// console.log(user.age); // 25
+// console.log(user.fr); 
