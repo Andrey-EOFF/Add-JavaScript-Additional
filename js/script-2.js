@@ -266,7 +266,6 @@
 
 // console.log(user);
 
-
 // const book = {
 //   title: "The Last Kingdom",
 //   author: "Bernard Cornwell",
@@ -335,7 +334,6 @@
 // console.log(book.isPublic); // false
 // console.log(book.genres); // ['historical prose', 'adventures', 'драма']
 
-
 // book.pageCount = 836;
 // book.originalLanguage = "en";
 // book.translations = ["ua", "ru"];
@@ -356,4 +354,161 @@
 
 // console.log(user.name); // "Генрі Сибола"
 // console.log(user.age); // 25
-// console.log(user.fr); 
+// console.log(user.fr);
+
+// const bookShelf = {
+//   books: ["The Last Kingdom", "Dream Guardian"],
+//   // Це метод об'єкта
+//   getBooks() {
+//     console.log("Цей метод буде повертати всі книги - властивість books");
+//   },
+//   // Це метод об'єкта
+//   addBook(bookName) {
+//     console.log("Цей метод буде додавати нову книгу у властивість books");
+//   },
+// };
+
+// // Виклики методів
+// bookShelf.getBooks();
+// bookShelf.addBook("Нова книга");
+
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     console.log(this);
+//   },
+// };
+
+// bookShelf.getBooks();
+
+// const bookShelf = {
+//   books: ["The Last Kingdom"],
+//   getBooks() {
+//     return this.books;
+//   },
+//   addBook(bookName) {
+//     this.books.push(bookName);
+//   },
+//   removeBook(bookName) {
+//     const bookIndex = this.books.indexOf(bookName);
+//     console.log(bookIndex);
+//     this.books.splice(bookIndex, 1);
+//   },
+// };
+
+// console.log(bookShelf.getBooks()); // ["The Last Kingdom"]
+// bookShelf.addBook("The Mist");
+// bookShelf.addBook("Dream Guardian");
+// console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'The Mist', 'Dream Guardian']
+// bookShelf.removeBook("The Mist");
+// console.log(bookShelf.getBooks()); // ['The Last Kingdom', 'Dream Guardian']
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Ключ
+//   console.log(key);
+//   // Значення властивості з таким ключем
+//   console.log(book[key]);
+// }
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   rating: 8.38,
+// };
+
+// for (const key in book) {
+//   // Якщо це власна властивість - виконуємо тіло if
+//   if (book.hasOwnProperty(key)) {
+//     console.log(key);
+//     console.log(book[key]);
+//   }
+
+//   // Якщо це невласна властивість - нічого не робимо
+// }
+
+// const keys = Object.keys(book);
+
+// console.log(keys);
+
+// for (const key of keys) {
+//   // Ключ
+//   console.log(key);
+//   // Значення властивості
+//   console.log(book[key]);
+// }
+// const values = Object.values(book);
+// console.log(values);
+
+// const goods = {
+//   apples: 6,
+//   grapes: 3,
+//   bread: 4,
+//   cheese: 7,
+// };
+
+// const values = Object.values(goods); // [6, 3, 4, 7]
+
+// let total = 0;
+
+// for (const value of values) {
+//   total += value;
+// }
+
+// console.log(total); // 20
+
+// const entries = Object.entries(goods);
+// console.log(entries);
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На березі спокійних вод",
+//     author: "Роберт Шеклі",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смішної людини",
+//     author: "Федір Достоєвський",
+//     rating: 7.75,
+//   },
+// ];
+
+// for (const book of books) {
+//   // Об'єкт книги
+//   console.log(book);
+//   // Назва
+//   console.log(book.title);
+//   // Автор
+//   console.log(book.author);
+//   // Рейтинг
+//   console.log(book.rating);
+// }
+
+// const bookNames = [];
+
+// for (const book of books) {
+//   bookNames.push(book.title);
+// }
+// console.log(bookNames);
+
+// let totalRating = 0;
+
+// for (const book of books) {
+//   totalRating += book.rating;
+// }
+
+// console.log(totalRating);
+
+// const avarageRating = (totalRating / books.length).toFixed(1);
+// console.log(avarageRating);
