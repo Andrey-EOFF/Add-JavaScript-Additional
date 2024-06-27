@@ -574,24 +574,118 @@
 // multiply(1, 2, 3);
 // multiply(1, 2, 3, 4);
 
-
 // function multiply(firstNumber, secondNumber, ...otherArgs) {
 //     console.log(firstNumber); // Значення першого аргументу
 //     console.log(secondNumber); // Значення другого аргументу
 //     console.log(otherArgs); // Масив інших аргументів
 //   }
-  
+
 //   multiply(1, 2);
 //   multiply(1, 2, 3);
 //   multiply(1, 2, 3, 4);
 
-const book = {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    genres: ["historical prose", "adventure"],
-    isPublic: true,
-    rating: 8.38,
-  };
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: false,
+//   rating: 8.38,
+// };
+
+// const accessType = book.isPublic ? "публічному" : "закритому";
+// const message = `Книга ${book.title} автора ${book.author} з рейтингом ${book.rating} знаходиться в ${accessType} доступі.`;
+
+// console.log(message);
+
+// const book = {
+//   title: "The Last Kingdom",
+//   author: "Bernard Cornwell",
+//   genres: ["historical prose", "adventure"],
+//   isPublic: true,
+//   rating: 8.38,
+// };
+
+// // Деструктуризуємо
+// const { title, author, isPublic, rating, coverImage } = book;
+// console.log(coverImage); // undefined
+
+// const accessType = isPublic ? "публічному" : "закритому";
+// const message = `Книга ${title} автора ${author} з рейтингом ${rating} знаходиться в ${accessType} доступі.`;
+
+
+// const book = {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//   };
   
-  const accessType = book.isPublic ? "публічному" : "закритому";
-  const message = `Книга ${book.title} автора ${book.author} з рейтингом ${book.rating} знаходиться в ${accessType} доступі.`;
+//   // Додамо зображення обкладинки, якщо воно відсутнє в об'єкті книги
+//   const {
+//     title,
+//     coverImage = "https://via.placeholder.com/640/480",
+//     author,
+//   } = book;
+  
+//   console.log(title); // The Last Kingdom
+//   console.log(author); // Bernard Cornwell
+//   console.log(coverImage);
+
+// const firstBook = {
+//     title: "The Last Kingdom",
+//     coverImage:
+//       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
+//   };
+  
+//   const {
+//     title: firstTitle,
+//     coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
+//   } = firstBook;
+  
+//   console.log(firstTitle); // The Last Kingdom
+//   console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
+  
+//   const secondBook = {
+//     title: "Сон смішної людини",
+//   };
+  
+//   const {
+//     title: secondTitle,
+//     coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
+//   } = secondBook;
+  
+//   console.log(secondTitle); // Сон смішної людини
+//   console.log(secondCoverImage); // https://via.placeholder.com/640/480
+
+
+// const books = [
+//     {
+//       title: "The Last Kingdom",
+//       author: "Bernard Cornwell",
+//       rating: 8.38,
+//     },
+//     {
+//       title: "На березі спокійних вод",
+//       author: "Роберт Шеклі",
+//       rating: 8.51,
+//     },
+//   ];
+  
+//   for (const book of books) {
+//     console.log(book.title);
+//     console.log(book.author);
+//     console.log(book.rating);
+// }
+  
+// for (const book of books) {
+//     const { title, author, rating } = book;
+  
+//     console.log(title);
+//     console.log(author);
+//     console.log(rating);
+//   }
+
+// for (const { title, author, rating } of books) {
+//     console.log(title);
+//     console.log(author);
+//     console.log(rating);
+//   }
+
