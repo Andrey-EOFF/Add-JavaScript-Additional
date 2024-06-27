@@ -612,19 +612,18 @@
 // const accessType = isPublic ? "публічному" : "закритому";
 // const message = `Книга ${title} автора ${author} з рейтингом ${rating} знаходиться в ${accessType} доступі.`;
 
-
 // const book = {
 //     title: "The Last Kingdom",
 //     author: "Bernard Cornwell",
 //   };
-  
+
 //   // Додамо зображення обкладинки, якщо воно відсутнє в об'єкті книги
 //   const {
 //     title,
 //     coverImage = "https://via.placeholder.com/640/480",
 //     author,
 //   } = book;
-  
+
 //   console.log(title); // The Last Kingdom
 //   console.log(author); // Bernard Cornwell
 //   console.log(coverImage);
@@ -634,27 +633,26 @@
 //     coverImage:
 //       "https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg",
 //   };
-  
+
 //   const {
 //     title: firstTitle,
 //     coverImage: firstCoverImage = "https://via.placeholder.com/640/480",
 //   } = firstBook;
-  
+
 //   console.log(firstTitle); // The Last Kingdom
 //   console.log(firstCoverImage); // https://images-na.ssl-images-amazon.com/images/I/51b5YG6Y1rL.jpg
-  
+
 //   const secondBook = {
 //     title: "Сон смішної людини",
 //   };
-  
+
 //   const {
 //     title: secondTitle,
 //     coverImage: secondCoverImage = "https://via.placeholder.com/640/480",
 //   } = secondBook;
-  
+
 //   console.log(secondTitle); // Сон смішної людини
 //   console.log(secondCoverImage); // https://via.placeholder.com/640/480
-
 
 // const books = [
 //     {
@@ -668,16 +666,16 @@
 //       rating: 8.51,
 //     },
 //   ];
-  
+
 //   for (const book of books) {
 //     console.log(book.title);
 //     console.log(book.author);
 //     console.log(book.rating);
 // }
-  
+
 // for (const book of books) {
 //     const { title, author, rating } = book;
-  
+
 //     console.log(title);
 //     console.log(author);
 //     console.log(rating);
@@ -689,3 +687,51 @@
 //     console.log(rating);
 //   }
 
+// const rgb = [200, 255, 100];
+// const [red, green, blue] = rgb;
+
+// console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
+
+// const rgb = [200, 255, 100];
+// let red, green, blue;
+
+// [red, green, blue] = rgb;
+
+// console.log(`R:${red},G:${green},B:${blue}`); // "R:200,G:255,B:100"
+
+// const rgb = [200, 100, 255];
+
+// const [red, green, blue, alfa = 0.3] = rgb;
+
+// console.log(`R:${red},G:${green},B:${blue},Alfa:${alfa}`); // "R:200,G:100,B:255,Alfa:0.3"
+
+// const rgb = [200, 255, 100];
+
+// const [red, ...colors] = rgb;
+
+// console.log(red); // "200"
+// console.log(colors); // [255, 100]
+
+// const rgb = [200, 100, 255];
+
+// const [, , blue] = rgb;
+
+// console.log(`Blue: ${blue}`); // "Blue: 255"
+
+// function doStuffWithBook(title, numberOfPages, downloads, rating, public) {
+//     // Робимо щось з параметрами
+//     console.log(title);
+//     console.log(numberOfPages);
+//     // І так далі
+  
+//   // ❌ Що таке 736? Що таке 10283? Що таке true?
+//   doStuffWithBook("The Last Kingdom", 736, 10283, 8.38, true);
+  
+    
+  function doStuffWithBook(book) {
+    const { title, numberOfPages, downloads, rating, isPublic } = book;
+    console.log(title);
+    console.log(numberOfPages);
+    // І так далі
+  }
+  
