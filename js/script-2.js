@@ -728,10 +728,10 @@
 //   doStuffWithBook("The Last Kingdom", 736, 10283, 8.38, true);
   
     
-  function doStuffWithBook(book) {
-    const { title, numberOfPages, downloads, rating, isPublic } = book;
-    console.log(title);
-    console.log(numberOfPages);
-    // І так далі
-  }
+//   function doStuffWithBook(book) {
+//     const { title, numberOfPages, downloads, rating, isPublic } = book;
+//     console.log(title);
+//     console.log(numberOfPages);
+//     // І так далі
+//   }
   
